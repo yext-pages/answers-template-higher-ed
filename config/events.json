@@ -44,6 +44,18 @@
        "noResults": {
         "visible": true 
       }
+    },
+    "SortOptions": {
+      "options": [
+        {
+          "direction": "ASC",
+          "field": "time.start",
+          "type": "FIELD",
+          "label": "Date"
+        }
+      ],
+      "searchOnChange": false,
+      "label": "Sort"
     }
   },
   // Configuration used to define the look and feel of the vertical, both on this page and, by default,
@@ -53,7 +65,7 @@
       // "label": "", // The name of the vertical in the section header and the navigation bar
       // "verticalLimit": 15, // The result count limit for vertical search
       // "universalLimit": 5, // The result count limit for universal search
-      "cardType": "standard", // The name of the card to use - e.g. accordion, location, customcard 
+      "cardType": "event-standard", // The name of the card to use - e.g. accordion, location, customcard 
       "icon": "star", // The icon to use on the card for this vertical
       "universalSectionTemplate": "standard"
     }
