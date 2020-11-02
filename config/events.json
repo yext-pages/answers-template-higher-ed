@@ -54,7 +54,7 @@
           "label": "Date"
         }
       ],
-      "searchOnChange": false,
+      "searchOnChange": true,
       "label": "Sort"
     }
   },

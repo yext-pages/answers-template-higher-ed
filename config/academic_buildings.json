@@ -1,17 +1,17 @@
 {
   "verticalKey": "academic_buildings", // The vertical key from your search configuration
-  "pageTitle": "Search", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
+  "pageTitle": "Academic Building Search", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
   // "metaDescription": "", // The meta tag for open graph description
   // "canonicalUrl": "", // The link tag for canonical URL as well as the meta tag for open graph url
   // "keywords": "", // The meta tag for keywords
   "pageSettings": {
     
-     "search": {
-       "verticalKey": "academic_buildings", // The vertical key from your search configuration
-       "defaultInitialSearch": "" // Enter a default search term
-     }
+    "search": {
+      "verticalKey": "academic_buildings", // The vertical key from your search configuration
+      "defaultInitialSearch": "" // Enter a default search term
+    }
     
-  },  
+  },
   "componentSettings": {
     /**
     "QASubmission": {
@@ -19,30 +19,37 @@
       "privacyPolicyUrl": "" // The fully qualified URL to the privacy policy
     },
     **/
-    /**
+    
     "Facets": {
-      "title": "", // The title to display above the facets
-      "expand": true, // Allow the user to expand and collapse the facets
-      "showMore": true, // Display a link to see more facet options within a facet
+      "expand": false, // Allow the user to expand and collapse the facets
+      "showMore": false, // Display a link to see more facet options within a facet
       "searchOnChange": true // Will automatically run a search as facets are selected or unselected. Set to false to only trigger updates with an Apply button. 
       // Additional options are available in the documentation
     },
-    **/
-    "SearchBar": {
-      "placeholderText": "Search", // The placeholder text in the answers search bar
-      "allowEmptySearch": true
+    
+   
+    "FilterLink": {
+      "changeFiltersText": "filters", // Text that displays by default
+      "resetFiltersText": "reset filters", // Text when filters are applied
+      "clearSearchText": "clear search" // Text when there are no results, conducts an empty search
+    },
+    
+    "AppliedFilters": {
+      "removable": true
     },
     "VerticalResults": {
       "noResults": {
         "displayAllResults": true // Optional, whether to display all results in the vertical when no results are found.
       },
-      "appliedFilters": {
-        "removable": true
-      }
+      "hideResultsHeader": true
+    },
+    "SearchBar": {
+      "placeholderText": "Search", // The placeholder text in the answers search bar
+      "allowEmptySearch": true // Allows users to submit an empty search in the searchbar
     },
     "Pagination": {
-       "noResults": {
-        "visible": true 
+      "noResults": {
+        "visible": true
       }
     }
   },
@@ -53,8 +60,20 @@
       "label": "Academic Buildings", // The name of the vertical in the section header and the navigation bar
       // "verticalLimit": 15, // The result count limit for vertical search
       // "universalLimit": 5, // The result count limit for universal search
-      "cardType": "standard", // The name of the card to use - e.g. accordion, location, customcard 
-      "icon": "star", // The icon to use on the card for this vertical
+      "cardType": "location-standard", // The name of the card to use - e.g. accordion, location, customcard 
+      "icon": "pin", // The icon to use on the card for this vertical
+      "mapConfig": {
+        "mapProvider": "MapBox", // The name of the provider (e.g. Mapbox, Google)
+        "pin": {
+          "backgroundColor": "", // Enter a hex value or color for the pin background
+          "labelColor": "", // Enter a hex value or color for the label color
+          "strokeColor": "" // Enter a hex value or color for the stroke color
+        },
+        "noResults": {
+          "displayAllResults": true, // Set to FALSE to hide results on the map when a search returns no results
+          "visible": true // Set to FALSE to hide the map when a search returns no results
+        }
+      },
       "universalSectionTemplate": "standard"
     }
   }
