@@ -14,6 +14,7 @@
     "serve_cmd": "./ci/serve.sh",
     "rebuild_cmd": "",
     "output_directories": [ "desktop" ],
+    "base_image_tag": "node-12.18",
     "dependencies": {
       "install_deps_cmd": "./ci/install_deps.sh",
       "required_files": [
