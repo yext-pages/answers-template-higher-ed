@@ -1,6 +1,6 @@
 {
   "verticalKey": "faculty", // The vertical key from your search configuration
-  "pageTitle": "Search", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
+  "pageTitle": "Faculty Search", // !!!REPLACE THIS VALUE!!! The contents of the title tag and meta open graph tag for title
   // "metaDescription": "", // The meta tag for open graph description
   // "canonicalUrl": "", // The link tag for canonical URL as well as the meta tag for open graph url
   // "keywords": "", // The meta tag for keywords
@@ -22,7 +22,7 @@
     
     "Facets": {
       "title": "", // The title to display above the facets
-      "expand": true, // Allow the user to expand and collapse the facets
+      "expand": false, // Allow the user to expand and collapse the facets
       "showMore": true, // Display a link to see more facet options within a facet
       "searchOnChange": true // Will automatically run a search as facets are selected or unselected. Set to false to only trigger updates with an Apply button. 
       // Additional options are available in the documentation
